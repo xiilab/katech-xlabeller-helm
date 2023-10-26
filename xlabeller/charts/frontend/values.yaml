@@ -1,21 +1,11 @@
-# Default values for xlabeller.
+# Default values for frontend.
 # This is a YAML-formatted file.
 # Declare variables to be passed into your templates.
-
-backend:
-  image: xiilab/xlabeller-backend
-  tag: 0.0.1
-
-frontend:
-  image: xiilab/xlabeller-frontend
-  tag: 0.0.1
-
-namespace: xlabeller
 
 replicaCount: 1
 
 image:
-  repository: nginx
+  repository: xiilab/xlabeller
   pullPolicy: IfNotPresent
   # Overrides the image tag whose default is the chart appVersion.
   tag: ""

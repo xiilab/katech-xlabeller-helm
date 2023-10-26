@@ -1,9 +1,10 @@
 apiVersion: v1
 kind: Service
 metadata:
-  name: {{ include "xlabeller.fullname" . }}
+  name: {{ include "backend.fullname" . }}
+  namespace: {{.Values.namespace}}
   labels:
-    {{- include "xlabeller.labels" . | nindent 4 }}
+    {{- include "backend.labels" . | nindent 4 }}
 spec:
   type: {{ .Values.service.type }}
   ports:
@@ -12,4 +13,4 @@ spec:
       protocol: TCP
       name: http
   selector:
-    {{- include "xlabeller.selectorLabels" . | nindent 4 }}
+    {{- include "backend.selectorLabels" . | nindent 4 }}

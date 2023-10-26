@@ -1,16 +1,6 @@
-# Default values for xlabeller.
+# Default values for backend.
 # This is a YAML-formatted file.
 # Declare variables to be passed into your templates.
-
-backend:
-  image: xiilab/xlabeller-backend
-  tag: 0.0.1
-
-frontend:
-  image: xiilab/xlabeller-frontend
-  tag: 0.0.1
-
-namespace: xlabeller
 
 replicaCount: 1
 
@@ -51,7 +41,7 @@ securityContext: {}
 
 service:
   type: ClusterIP
-  port: 80
+  port: 8080
 
 ingress:
   enabled: false
