@@ -38,7 +38,7 @@ backend:
 frontend:
   image:
     repository: xiilab/katech-labeller-front
-    tag: 0.1
+    tag: "latest"
 
 namespace: katech-xlabeller
 
