@@ -4,7 +4,7 @@
 
 backend:
   image:
-    repository: xiilab/katech-xlabeller-back
+    repository: xiilab/katech-labeller-back
     tag: "0.15-dev"
   env:
     - name: SPRING_DATASOURCE_HIKARI_JDBD-URL
@@ -37,7 +37,7 @@ backend:
       value: eHtHXFsIxEMUdBSGWaFY8HyhrjrJP9O2
 frontend:
   image:
-    repository: xiilab/katech-xlabeller-front
+    repository: xiilab/katech-labeller-front
     tag: 0.1
 
 namespace: katech-xlabeller
