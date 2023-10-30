@@ -5,10 +5,10 @@
 replicaCount: 1
 
 image:
-  repository: xiilab/xlabeller
+  repository: xiilab/katech-labeller-back
   pullPolicy: IfNotPresent
   # Overrides the image tag whose default is the chart appVersion.
-  tag: 0.6
+  tag: latest
 
 imagePullSecrets: []
 nameOverride: ""
