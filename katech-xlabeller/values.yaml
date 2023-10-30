@@ -137,7 +137,7 @@ mariadb:
       annotations: { }
       accessModes:
         - ReadWriteOnce
-      size: 8Gi
+      size: 4Gi
       selector: { }
   secondary:
     tolerations:
@@ -183,5 +183,5 @@ mariadb:
       annotations: { }
       accessModes:
         - ReadWriteOnce
-      size: 8Gi
+      size: 4Gi
       selector: { }
