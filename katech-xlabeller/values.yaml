@@ -4,13 +4,13 @@ backend:
     tag: 0.16-dev
   env:
   - name: SPRING_DATASOURCE_HIKARI_JDBD-URL
-    value: jdbc:log4jdbc:mysql://katech-xlabeller-mariadb:3306/labeller?useUnicode=true&useJDBCCompliantTimezoneShift=true&useLegacyDatetimeCode=false&serverTimezone=Asia/Seoul&useSSL=false&allowMultiQueries=true&noAccessToProcedureBodies=true
+    value: jdbc:log4jdbc:mysql://mariadb:3306/labeller?useUnicode=true&useJDBCCompliantTimezoneShift=true&useLegacyDatetimeCode=false&serverTimezone=Asia/Seoul&useSSL=false&allowMultiQueries=true&noAccessToProcedureBodies=true
   - name: SPRING_DATASOURCE_HIKARI_USERNAME
     value: root
   - name: SPRING_DATASOURCE_HIKARI_PASSWORD
     value: root
   - name: DATA-EXTRACTION_HOST
-    value: katech-xlabeller-mariadb
+    value: mariadb
   - name: DATA-EXTRACTION_USER
     value: root
   - name: DATA-EXTRACTION_PASSWORD
