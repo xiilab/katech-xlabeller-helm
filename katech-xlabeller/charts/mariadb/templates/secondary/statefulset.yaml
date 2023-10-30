@@ -142,6 +142,8 @@ spec:
               value: {{ coalesce .Values.primary.service.ports.mysql .Values.primary.service.port | quote }}
             - name: MARIADB_MASTER_ROOT_USER
               value: "root"
+            - name: MARIADB_MASTER_ROOT_PASSWORD
+              value: "root"
             {{- if .Values.auth.usePasswordFiles }}
             - name: MARIADB_MASTER_ROOT_PASSWORD_FILE
               value: {{ default "/opt/bitnami/mariadb/secrets/mariadb-root-password" .Values.auth.customPasswordFiles.root }}
