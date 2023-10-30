@@ -133,7 +133,7 @@ mariadb:
       enabled: true
       existingClaim: ''
       subPath: ''
-      storageClass: nfs-csi
+      storageClass: nfs-client
       annotations: { }
       accessModes:
         - ReadWriteOnce
@@ -179,7 +179,7 @@ mariadb:
     persistence:
       enabled: true
       subPath: ''
-      storageClass: nfs-csi
+      storageClass: nfs-client
       annotations: { }
       accessModes:
         - ReadWriteOnce
