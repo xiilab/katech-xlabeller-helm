@@ -10,7 +10,7 @@ backend:
   - name: SPRING_DATASOURCE_HIKARI_PASSWORD
     value: root
   - name: DATA-EXTRACTION_HOST
-    value: mariadb
+    value: katech-xlabeller-mariadb
   - name: DATA-EXTRACTION_USER
     value: root
   - name: DATA-EXTRACTION_PASSWORD
