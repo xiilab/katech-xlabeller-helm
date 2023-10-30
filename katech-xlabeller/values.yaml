@@ -82,6 +82,7 @@ mariadb:
   fullnameOverride: mariadb
   architecture: standalone
   auth:
+    forcePassword: true
     rootPassword: root
   primary:
     tolerations:
