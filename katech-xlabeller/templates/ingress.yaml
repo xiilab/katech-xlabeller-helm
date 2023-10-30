@@ -28,13 +28,13 @@ spec:
             pathType: Prefix
             backend:
               service:
-                name: xlabeller-backend-service
+                name: katech-xlabeller-backend
                 port:
                   number: 8080
           - path: /
             pathType: Prefix
             backend:
               service:
-                name: xlabeller-frontend-service
+                name: katech-xlabeller-frontend
                 port:
                   number: 3000
