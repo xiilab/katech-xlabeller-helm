@@ -5,7 +5,7 @@
 backend:
   image:
     repository: xiilab/katech-xlabeller-back
-    tag: 0.1
+    tag: "0.15-dev"
   env:
     - name: SPRING_DATASOURCE_HIKARI_JDBD-URL
       value: jdbc:log4jdbc:mysql://mariadb:3306/labeller?useUnicode=true&useJDBCCompliantTimezoneShift=true&useLegacyDatetimeCode=false&serverTimezone=Asia/Seoul&useSSL=false&allowMultiQueries=true&noAccessToProcedureBodies=true
