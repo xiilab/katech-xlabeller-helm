@@ -81,3 +81,5 @@ mariadb:
   nameOverride: ''
   fullnameOverride: mariadb
   architecture: standalone
+  auth:
+    rootPassword: root
