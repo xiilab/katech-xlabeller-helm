@@ -2,7 +2,7 @@ apiVersion: v1
 kind: PersistentVolumeClaim
 metadata:
   name: mariadb-pvc
-  namespace: katech-marketplace
+  namespace: katech-xlabeller
 spec:
   storageClassName: nfs-client
   accessModes:
