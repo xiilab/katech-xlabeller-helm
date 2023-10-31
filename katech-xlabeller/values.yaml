@@ -78,6 +78,7 @@ nodeSelector: {}
 tolerations: []
 affinity: {}
 mariadb:
+  initdbScriptsConfigMap: initSqlConfigMap
   nameOverride: ''
   fullnameOverride: mariadb
   architecture: standalone

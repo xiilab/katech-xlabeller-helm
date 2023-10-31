@@ -89,8 +89,8 @@ serviceBindings:
 ##
 image:
   registry: docker.io
-  repository: xiilab/katech-labeller-db
-  tag: "latest"
+  repository: bitnami/mariadb
+  tag: 10.11.4-debian-11-r46
   digest: ""
   ## Specify a imagePullPolicy
   ## Defaults to 'Always' if image tag is 'latest', else set to 'IfNotPresent'

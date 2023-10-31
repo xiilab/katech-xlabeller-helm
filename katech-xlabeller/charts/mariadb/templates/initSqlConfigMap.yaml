@@ -1,0 +1,8 @@
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: initSqlConfigMap
+  namespace: {{.Values.namespace}}
+data:
+  sql: |-
+  {{ (.Files.Get "initSql.sql" | indent 2)}}
