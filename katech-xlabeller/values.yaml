@@ -35,6 +35,15 @@ frontend:
   image:
     repository: xiilab/katech-labeller-front
     tag: 0.9-dev
+mariadb:
+  volumeMounts:
+    - name: mariadb-pvc
+      mountPath: "/bitnami/mariadb"
+  volumes:
+    - name: mariadb-pvc
+      persistentVolumeClaim:
+        claimName: mariadb-pvc
+
 namespace: katech-xlabeller
 replicaCount: 1
 image:
