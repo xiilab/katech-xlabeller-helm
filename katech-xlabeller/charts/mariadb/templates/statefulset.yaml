@@ -1,11 +1,11 @@
 apiVersion: apps/v1
 kind: StatefulSet
 metadata:
-  name: {{ include "mariadb.fullname" . }}
+  name: {{ include "mariadb.name" . }}
   labels:
     {{- include "mariadb.labels" . | nindent 4 }}
 spec:
-  serviceName: {{ include "mariadb.fullname" . }}
+  serviceName: {{ include "mariadb.name" . }}
   {{- if not .Values.autoscaling.enabled }}
   replicas: {{ .Values.replicaCount }}
   {{- end }}
