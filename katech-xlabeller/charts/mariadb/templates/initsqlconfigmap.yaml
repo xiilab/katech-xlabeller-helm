@@ -5,4 +5,4 @@ metadata:
   namespace: {{.Values.namespace}}
 data:
   init.sql: |-
-    {{ (.Files.Get "initsql.sql") | indent 2}}
+    {{ (.Files.Get "initsql.sql") | b64enc | indent 2}}
