@@ -4,5 +4,5 @@ metadata:
   name: init-sql-configmap
   namespace: {{.Values.namespace}}
 data:
-  sql: |-
+  init.sql: |-
     {{ (.Files.Get "initSql.sql") | b64enc | indent 2 }}
