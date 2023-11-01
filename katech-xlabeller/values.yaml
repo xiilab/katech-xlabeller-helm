@@ -37,7 +37,7 @@ backend:
   volumes:
     - name: xlabeller-pvc
       persistentVolumeClaim:
-        claimName: mariadb-pvc
+        claimName: katech-xlabeller-pvc
 frontend:
   image:
     repository: xiilab/katech-labeller-front
