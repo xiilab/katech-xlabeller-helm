@@ -1,7 +1,7 @@
 backend:
   image:
     repository: xiilab/katech-labeller-back
-    tag: 0.16-dev
+    tag: 0.17-dev
   env:
   - name: SPRING_DATASOURCE_HIKARI_JDBD-URL
     value: jdbc:log4jdbc:mysql://mariadb:3306/labeller?useUnicode=true&useJDBCCompliantTimezoneShift=true&useLegacyDatetimeCode=false&serverTimezone=Asia/Seoul&useSSL=false&allowMultiQueries=true&noAccessToProcedureBodies=true
@@ -32,25 +32,24 @@ backend:
   - name: ADMIN_SECRET
     value: eHtHXFsIxEMUdBSGWaFY8HyhrjrJP9O2
   volumeMounts:
-    - name: xlabeller-pvc
-      mountPath: "/root/katech"
+  - name: xlabeller-pvc
+    mountPath: /root/katech
   volumes:
-    - name: xlabeller-pvc
-      persistentVolumeClaim:
-        claimName: mariadb-pvc
+  - name: xlabeller-pvc
+    persistentVolumeClaim:
+      claimName: mariadb-pvc
 frontend:
   image:
     repository: xiilab/katech-labeller-front
     tag: 0.9-dev
 mariadb:
   volumeMounts:
-    - name: mariadb-pvc
-      mountPath: "/bitnami/mariadb"
+  - name: mariadb-pvc
+    mountPath: /bitnami/mariadb
   volumes:
-    - name: mariadb-pvc
-      persistentVolumeClaim:
-        claimName: mariadb-pvc
-
+  - name: mariadb-pvc
+    persistentVolumeClaim:
+      claimName: mariadb-pvc
 namespace: katech-xlabeller
 replicaCount: 1
 image:
