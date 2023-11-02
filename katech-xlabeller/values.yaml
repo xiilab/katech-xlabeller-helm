@@ -32,7 +32,7 @@ backend:
   - name: ADMIN_SECRET
     value: eHtHXFsIxEMUdBSGWaFY8HyhrjrJP9O2
   volumeMounts:
-    - name: market-pvc
+    - name: mydisk
       mountPath: "/root/katech"
   volumes:
     - name: mydisk
