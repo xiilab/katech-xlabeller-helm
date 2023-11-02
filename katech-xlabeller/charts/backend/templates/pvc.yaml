@@ -4,9 +4,11 @@ metadata:
   name: katech-xlabeller-pvc
   namespace: katech-xlabeller
 spec:
-  storageClassName: katech-dataset
   accessModes:
     - ReadWriteMany
   resources:
     requests:
       storage: 10Gi
+  storageClassName: katech-dataset
+  volumeMode: Filesystem
+  volumeName: katech-xlabeller-pv
