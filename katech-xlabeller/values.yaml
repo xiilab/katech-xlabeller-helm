@@ -37,7 +37,7 @@ backend:
   volumes:
     - name: mydisk
       persistentVolumeClaim:
-        claimName: market-pvc
+        claimName: katech-xlabeller-pvc
 frontend:
   image:
     repository: xiilab/katech-labeller-front
