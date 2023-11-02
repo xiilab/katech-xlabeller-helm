@@ -5,6 +5,9 @@ metadata:
   namespace: katech-xlabeller
 spec:
   storageClassName: katech-dataset
+  volumeMode: Filesystem
+  capacity:
+    storage: 50Gi
   accessModes:
     - ReadWriteMany
   cephfs:
