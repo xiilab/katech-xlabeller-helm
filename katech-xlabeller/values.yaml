@@ -32,12 +32,12 @@ backend:
   - name: ADMIN_SECRET
     value: eHtHXFsIxEMUdBSGWaFY8HyhrjrJP9O2
   volumeMounts:
-    - name: xlabeller-pvc
+    - name: market-pvc
       mountPath: "/root/katech"
   volumes:
-    - name: xlabeller-pvc
+    - name: mydisk
       persistentVolumeClaim:
-        claimName: katech-xlabeller-pvc
+        claimName: market-pvc
 frontend:
   image:
     repository: xiilab/katech-labeller-front

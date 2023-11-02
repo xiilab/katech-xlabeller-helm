@@ -4,9 +4,9 @@ metadata:
   name: mariadb-pvc
   namespace: katech-xlabeller
 spec:
-  storageClassName: nfs-client
+  storageClassName: nfs-csi
   accessModes:
     - ReadWriteOnce
   resources:
     requests:
-      storage: 5Gi
+      storage: 8Gi
