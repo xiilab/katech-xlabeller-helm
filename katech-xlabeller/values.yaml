@@ -1,4 +1,8 @@
 backend:
+  tolerations:
+    - effect: NoSchedule
+      key: node-role.kubernetes.io/master
+      operator: Exists
   image:
     repository: xiilab/katech-labeller-back
     tag: 0.16-dev
@@ -39,10 +43,18 @@ backend:
       persistentVolumeClaim:
         claimName: katech-xlabeller-pvc
 frontend:
+  tolerations:
+    - effect: NoSchedule
+      key: node-role.kubernetes.io/master
+      operator: Exists
   image:
     repository: xiilab/katech-labeller-front
     tag: 0.9-dev
 mariadb:
+  tolerations:
+    - effect: NoSchedule
+      key: node-role.kubernetes.io/master
+      operator: Exists
   volumeMounts:
     - name: mariadb-pvc
       mountPath: "/bitnami/mariadb"
