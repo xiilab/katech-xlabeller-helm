@@ -41,7 +41,7 @@ backend:
 frontend:
   image:
     repository: xiilab/katech-labeller-front
-    tag: 0.34-dev
+    tag: 0.35-dev
 mariadb:
   volumeMounts:
   - name: mariadb-pvc
